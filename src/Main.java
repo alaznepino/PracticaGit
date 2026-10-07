@@ -8,6 +8,12 @@ public class Main {
     System.out.println(nombre());
     System.out.println("Dime tu edad");
     System.out.println(edad());
+    System.out.println("Has aprobado?Si/No");
+    if(aprobado()){
+        System.out.println("Felicidades");
+    } else {
+        System.out.println("A repetir");
+    }
     }
     public static String nombre(){
      String nombre;
@@ -18,5 +24,15 @@ public class Main {
      int edad;
      Scanner sc = new Scanner(System.in);
      return edad = sc.nextInt();
+    }
+    public static boolean aprobado(){
+        String apruebas;
+        Scanner sc = new Scanner(System.in);
+        apruebas = sc.nextLine();
+        if (apruebas.equals("Si")){
+            return true;
+        } else {
+            return false;
+        }
     }
 }
