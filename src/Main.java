@@ -19,4 +19,14 @@ public class Main {
      Scanner sc = new Scanner(System.in);
      return edad = sc.nextInt();
     }
+    public static boolean aprobado(){
+        String apruebas;
+        Scanner sc = new Scanner(System.in);
+        apruebas = sc.nextLine();
+        if (apruebas.equals("Si")){
+            return true;
+        } else {
+            return false;
+        }
+    }
 }
